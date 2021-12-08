@@ -1,0 +1,7 @@
+changer de langue 
+demander la langue au debut
+theme sombre avec button présent en permanence
+faire ia 3 difficultés : une totalement random, une un coup reflechis un random, et une tout reflechis
+faire un .exe
+
+

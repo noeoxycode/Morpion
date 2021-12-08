@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Morpion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="startingBlock">
+    <h1>Welcome to tic tac toe</h1>
+    <ul id="setUpGame">
+        <form>
+            <h2>Saisissez le nom des deux joueurs :</h2>
+            <li>
+                <input id="player0"/>
+            </li>
+            <li>
+                <input id="player1"/>
+            </li>
+            <button type="button" onclick=gameInitialisation()>Valider</button>
+        </form>
+    </ul>
+</div>
+<div id="game">
+    <div id="headerGame">
+        <table>
+            <tr>
+                <td>
+                    <ul>
+                        <li>
+                            <h2>Score :</h2>
+                        </li>
+                        <li>
+                            <h2 id="player0result"></h2>
+                        </li>
+                        <li>
+                            <h2 id="player1result"></h2>
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <div id="conclusion">
+                        <div id="bilan"></div>
+                        <button type="button" onclick="newGame()">Rejouer !</button>
+                        <button type="button" onclick="resetGame()">Recommencer avec de nouvelles personnes</button>
+                    </div>
+                </td>
+            </tr>
+
+        </table>
+
+    </div>
+
+    <table id="table">
+        <tr>
+            <td><img id="block0" class="box" data-toto=2 onclick="turn(this.id)"/></td>
+            <td><img id="block1" class="box" data-toto=2 onclick="turn(this.id)"/></td>
+            <td><img id="block2" class="box" data-toto=2 onclick="turn(this.id)"/></td>
+        </tr>
+        <tr>
+            <td><img id="block3" class="box" data-toto=2 onclick="turn(this.id)"/></td>
+            <td><img id="block4" class="box" data-toto=2 onclick="turn(this.id)"/></td>
+            <td><img id="block5" class="box" data-toto=2 onclick="turn(this.id)"/></td>
+        </tr>
+        <tr>
+            <td><img id="block6" class="box" data-toto=2 onclick="turn(this.id)"/></td>
+            <td><img id="block7" class="box" data-toto=2 onclick="turn(this.id)"/></td>
+            <td><img id="block8" class="box" data-toto=2 onclick="turn(this.id)"/></td>
+        </tr>
+    </table>
+</div>
+
+
+
+<script src="index.js"></script>
+<script>
+    document.getElementById("startingBlock").hidden = false;
+    document.getElementById("game").hidden = true;
+    document.getElementById("conclusion").hidden = true;
+</script>
+</body>
+</html>
